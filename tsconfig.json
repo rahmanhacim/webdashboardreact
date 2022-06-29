@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@layouts/*": ["layouts/*"],
+      "@components/*": ["src/shared/components/*"],
+      "@constants/*": ["src/shared/constants/*"],
+      "@utils/*": ["src/shared/utils/*"],
+      "@helpers/*": ["src/shared/utils/helpers/*"],
+      "@services/*": ["src/shared/services-bak/*"],
+      "@core/*": ["src/shared/core/*"],
+      "@modules/*": ["src/modules/*"],
+      "@klc/*": ["node_modules/klayar/components/*"]
+    },
+    "target": "es6",
+    "lib": ["es6", "dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "types": ["reflect-metadata"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/shared/services/BaseService.js"
+  ],
+  "exclude": ["node_modules"]
+}
